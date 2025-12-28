@@ -4,6 +4,7 @@ import lab_setup_do_not_edit
 import pandas as pd
 df = pd.read_csv('parkinsons.csv')
 df = df.dropna()
+df.head()
 print(df.columns.to_list())
 selected_features = ['NHR', 'PPE']
 X = df[selected_features]
